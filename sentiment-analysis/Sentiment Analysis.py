@@ -36,7 +36,7 @@ def preprocess_review(text):
 
 
 # Step 3: Load Dataset
-df = pd.read_csv('../Amazon_Reviews.csv', encoding='ISO-8859-1')
+df = pd.read_csv('Amazon_Reviews.csv', encoding='ISO-8859-1')
 
 df = df.dropna(subset=['Reviews'])
 
@@ -78,7 +78,7 @@ with open('vectorizer.pkl', 'rb') as vec_file:
     vectorizer = pickle.load(vec_file)
 
 # Load dataset again for display
-reviews = pd.read_csv('../Amazon_Reviews.csv', encoding='ISO-8859-1')
+reviews = pd.read_csv('Amazon_Reviews.csv', encoding='ISO-8859-1')
 
 # GUI App
 root = tk.Tk()
